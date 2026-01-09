@@ -8,7 +8,7 @@ const ViewProduct = ({product, rating}) => {
             </div>
             <div className="details">
                 <h1>{product.title}</h1>
-                <p>{product.description}</p>
+                <p className='desc'>{product.description}</p>
                 <p className='price'><strong>Price:</strong> <span>Rs.{product.price}</span></p>
                 <div className="rating">
                     <p><strong>Rating:</strong> <span  className="stars">{new Array(Math.floor(rating)).fill(<i class="ri-star-fill"></i>)}</span></p>
